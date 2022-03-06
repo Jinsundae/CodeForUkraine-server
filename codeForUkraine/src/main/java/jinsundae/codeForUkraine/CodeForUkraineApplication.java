@@ -17,6 +17,7 @@ public class CodeForUkraineApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CodeForUkraineApplication.class, args);
 	}
+  
 	@Bean
 	public AuditorAware<String> auditorProvider() {
 		return () -> Optional.of(UUID.randomUUID().toString());
